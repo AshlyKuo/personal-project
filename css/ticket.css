@@ -1,0 +1,148 @@
+/* ------------Key Vision Block----------- */
+.kv{
+    display: block;
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .kv img{
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .kv .kv-subtract{
+    z-index: 5;
+    bottom: -3px;
+  }
+  
+  .kv-back{
+    z-index: 1;
+  }
+  
+  .kv-front{
+    z-index: 4;
+  }
+  
+  .kv h1{
+    font-family: 'Fredoka One', 'Noto Sans TC';
+    text-shadow: 3px 3px 4px #000;
+    font-size: 6rem;
+    color: #FDD764;
+    display: block;
+  
+    position: absolute;
+    bottom: 50%;
+    left: 20vw;
+    z-index: 2;
+  }
+
+/* ticketTitle Block */
+.ticketTitle{}
+
+/* Book Info Block */
+.bookInfo{
+  display: grid;
+  grid-template-columns:350px 100px;
+  grid-template-rows: 50px 50px;
+  grid-template-areas: 'title title'
+                       'h5 button';
+}
+.bookInfo h4{
+  grid-area: title;
+  padding: 10px 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #318339;
+}
+
+.bookInfo h5{
+  grid-area: h5;
+  padding: 2px 19px;
+  font-size: 1.8rem;
+
+}
+
+.bookInfo div{
+  grid-area: button;
+}
+
+.bookInfo a{
+  display: block;
+  width: 50px;
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  line-height: 40px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #318339;
+  margin:0 auto;
+}
+
+
+/* BookTicket Online */
+.bookOnline{
+    background-color: #FDD764;
+    border-radius: 10px;
+}
+
+.bookOnline h3{}
+
+.bookOnline ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.bookOnline li{
+    width: 450px;
+    height: 400px;
+    margin-left: 30px;
+}
+
+.singleTicket{
+    background-image: url(../img/Ticket-Page/single.jpg);
+    background-size: cover;
+    border-radius: 15px;
+}
+.singleTicket h5{
+  color: #fff;
+  text-shadow: #000 1px 1px;
+}
+
+.singleTicket .bookInfo{
+  margin-top: 300px;
+}
+
+.yearTicket img{
+  width: 450px;
+  height: 300px;
+  border-radius: 15px;
+
+}
+
+/* Group Ticket */
+.otherTicket ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;    
+}
+
+.otherTicket li{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+.otherTicket li img{
+    width: 450px;
+    height: 300px;
+    border-radius: 15px;
+}
+

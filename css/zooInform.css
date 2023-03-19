@@ -1,0 +1,168 @@
+/* Key Vision */
+.kv{
+    display: block;
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+.kv img{
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    object-fit: cover;
+}
+  
+.kv .kv-subtract{
+    z-index: 5;
+    bottom: -3px;
+}
+  
+.kv-back{
+    z-index: 1;
+}
+  
+.kv-front{
+    z-index: 4;
+}
+
+.kv h1{
+    font-family: 'Fredoka One', 'Noto Sans TC';
+    text-shadow: 3px 3px 4px #000;
+    font-size: 6rem;
+    color: #FDD764;
+    display: block;
+    position: absolute;
+    bottom: 50%;
+    left: 20vw;  
+    z-index:2
+}
+  
+/*Main Block */
+.info-block{
+    width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.info-block h4{
+    font-weight: bold;
+    font-size: 3rem;
+    color: #318339;
+}
+
+
+/* Open Time Block */
+.openTime{
+    margin-top: 30px;
+}
+.openTime ul{
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+.openTime li{
+    margin-bottom: 5px;
+}
+
+.openTime h5{
+    font-size: 1.8rem;
+}
+
+.openTime h6{
+    font-size: 1.5rem;
+}
+
+.openTime li:last-child{
+    color: rgb(227, 3, 3);
+}
+
+.openTimeDetail{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+/* Transportation Block */
+.transportWay{
+    width: 200px;
+    height: 40px;
+    background-color: #FDD764;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.transportWay h5{
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 40px;
+}
+
+.transportWay div{
+    display: none;
+    width: 196px;
+}
+.transportWay div p{
+    display: block;
+    padding: 10px;
+}
+
+.transportWay:hover{
+    width: 196px;
+    background-color: #FBFFF6;
+    border: 2px solid #FDD764;
+    height: auto;
+    transition: height 2s;
+}
+
+.transportWay:hover >div{
+    display: block;
+    transition: all 1s;
+}
+
+
+
+/* Precaution Block */
+.precaution ul{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+ 
+.precaution li{
+   margin-bottom: 5px;
+}
+
+.precaution h5{
+    font-size: 1.8rem;
+    margin-bottom: 2px;
+}
+
+.precaution h6{
+    font-size: 1.5rem;
+}
+
+
+
+/* -----------Ticket Aside----------- */
+.ticket img{
+    display: block;
+    width: 15vh;
+    position: fixed;
+    right: -20px;
+    bottom: 5vh;
+    box-sizing: border-box;
+    z-index: 999;
+}
+    
+.ticket img:hover{ 
+    width: 16vh;
+}
+  

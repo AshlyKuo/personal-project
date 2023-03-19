@@ -1,0 +1,156 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+
+html{
+    font-size: 62.5%;
+    font-family: 'Open Sans','Noto Sans TC', sans-serif;
+  }
+  
+body{
+    background-color:#FBFFF6 ;
+    background-repeat: no-repeat;
+  }
+  
+.sub-title{
+    font-size: 4rem;
+    color: #318339;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 600;
+  }
+
+.main-block{
+    width: 1200px;
+    margin: 0 auto;
+    /* outline: 1px solid ; */
+    padding: 30px;
+    line-height: 1.6;
+  }
+  
+
+  /* -----------Header------------- */
+  header div{
+    background-color: #FBFFF6;
+    width: 90%;
+    height: 104px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 5px black ;
+
+    /* 將nav bar固定於畫面上方 */
+    position: fixed;
+    top:10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 9999;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+  width: 80px;
+  margin-right: 10px;
+}
+
+.logo {
+  margin-left: 5vw;
+  /* outline: 1px solid; */
+  color: #000;
+  text-decoration: none;
+  font-family:'Fredoka One', cursive;
+  font-size: 3rem;
+  display: flex;
+  align-items: center; 
+}
+
+nav{}
+
+.nav{
+    display: flex;
+    margin-right: 5vw;
+    /* outline: 1px solid; */
+}
+
+.nav li{
+    justify-content: space-around;
+    margin: 10px ;
+}
+
+.nav a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding: 10px;
+    color: black;
+    border-radius: 10px;
+    transition: background-color  linear 1s;
+    
+}
+
+.nav a:hover{
+  background-color: #F1B602;
+}
+
+/* ---------Footer------------ */
+footer{
+  background-color: #FDD764;
+  width: 100%;
+}
+
+.footerWrapper{
+  /* outline: 1px solid; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footerWrapper>div{
+  /* outline: 1px solid red; */
+  padding: 30px 100px;
+}
+
+
+.zooFooterLeft img:nth-child(1){
+  width: 80px;
+}
+
+.zooFooterLeft>ul>li{
+  margin-bottom: 10px;
+}
+
+
+
+.footerSNSIcon{
+  display: flex;
+  flex-direction: row;
+}
+
+.footerLogo{
+  font-family:'Fredoka One', cursive;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;  
+}
+
+.zooFooterRight >ul>li{
+  padding: 50px;
+}
+
+.footerNav{
+  display: flex;
+  flex-direction: row;
+}
+
+.footerNav li{
+  margin-right: 10px;
+}
+
+.footerNav a{
+  text-decoration: none;
+  color: #000;
+}
+
+  

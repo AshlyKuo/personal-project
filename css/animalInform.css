@@ -1,0 +1,162 @@
+/* Key Vision Block */
+.kv{
+    display: block;
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .kv img{
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .kv .kv-subtract{
+    z-index: 5;
+    bottom: -3px;
+  }
+  
+  .kv-back{
+    z-index: 1;
+  }
+
+  .kv h1{
+    font-family: 'Fredoka One', 'Noto Sans TC';
+    text-shadow: 3px 3px 4px #000;
+    font-size: 6rem;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: #FDD764;
+    display: block;
+    position: absolute;
+    bottom: 60%;
+    left: 50vw;  
+    z-index:2
+  }
+
+/* 標題排版 */
+
+.wrapper{
+    position: relative;
+}
+
+.wrapper>li{
+    background-color: #FDD764;
+    border-radius: 0 10px 10px 10px;
+    /* outline: 3px solid black; */
+    width: 1200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* 動物區選單排版 */
+span{
+    display: block;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #318339;
+    border-radius: 10px 10px 0 0;
+
+    position: absolute;
+    top: -59px;
+}
+
+.peguinBtn span{
+    background-color: #FDD764;
+}
+
+span:hover{
+    background-color: #FDD764;
+}
+
+.peguinBtn span{
+    left: 0;
+}
+
+.tempBtn span{
+    left: 205px;
+}
+
+.tempBtn:hover .temperateZoneAnimal{
+    display: block;
+}
+
+.tempBtn:hover span{
+    background-color: #FDD764;
+}
+
+.tempBtn:hover .peguinBtn span{
+    background-color: #318339;
+}
+
+.childBtn span{
+    left: 410px;
+}
+
+.childBtn:hover .childZoneAnimal{
+    display: block;
+}
+
+.childBtn:hover span{
+    background-color: #FDD764;
+}
+/* 除了企鵝區先隱藏 */
+.listWrapper{
+    display: none;
+}
+
+.penguinArea{
+    display: block;
+}
+
+
+/* 每區的排版 */
+.listWrapper ul{
+    width: 1100px;
+    height: auto;
+    margin: 46px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.listWrapper ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #318339;
+    border-radius: 10px;
+    width: 330px;
+    height: 550px;
+    margin: 16px;
+}
+
+.listWrapper ul li img{
+    border-radius: 10%;
+    width: 300px;
+    height: 450px;
+    padding: 25px 0 20px;
+    
+}
+
+.listWrapper ul li h4{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 400;
+
+}
+
+/* footer */
+footer{
+    margin-top: 1300px;
+}

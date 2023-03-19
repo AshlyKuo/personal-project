@@ -1,0 +1,125 @@
+/* Key Vision Block */
+.kv{
+    display: block;
+    width: 100%;
+    height: 600px;
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .kv img{
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .kv .kv-subtract{
+    z-index: 5;
+    bottom: -3px;
+  }
+  
+  .kv-back{
+    z-index: 1;
+  } 
+  
+  .kv h1{
+    font-size: 4.7rem;
+    font-weight: 600;
+    color: rgba(255,214,91,0.1);
+    
+    display: block;
+    text-align: center;
+  
+    position: absolute;
+    left: 30vw;
+    bottom: 50%;
+    z-index: 2;
+  
+    animation: 1s kv-h1 0.2s ease-out forwards;
+  }
+
+ /* ...h1 animation.... */
+  
+@keyframes kv-h1{
+    0%{
+        color: rgba(255,214,91,0.1);
+        text-shadow: none;
+    }
+        
+    100%{
+        color: #FDD764;
+        text-shadow: 3px 3px 4px #000;
+    
+    }
+    }
+
+/* Main Block */
+.zooNews{
+    background-color: #FDD764;
+    border-radius: 20px;
+    margin: 120px auto 100px;
+}
+
+.zooNews ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.zooNews li{
+    background-color: #FBFFF6;
+    padding: 20px;
+    padding-left: 50px;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: 50px auto;
+    grid-template-areas:'img title'
+                        'img content';
+}
+
+.zooNews li img{
+    outline: 2px solid #FDD764;
+    width: 266px;
+    height:200px;
+    grid-area: img;
+    border-radius: 10px;
+}
+
+.zooNews li h5{
+    font-size: 2.5rem;
+    font-weight: 700;
+    grid-area: title;
+}
+
+.zooNews li p{
+    font-size: 1.8rem;
+    grid-area: content;
+}
+
+/* 分頁點選 */
+
+.zooNews .pages{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.zooNews .pages li{
+    background-color: #FDD764;
+    width: 10px;
+    height: 20px;
+}
+
+.zooNews .pages li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
+}
