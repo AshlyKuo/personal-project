@@ -136,6 +136,8 @@
   background-size: cover;
 }
 
+/* Donate Online Block */
+
 .donate .donateOnline{
   background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3)),url(../img/Support-Page/donateonline.jpg);
 }
@@ -163,31 +165,25 @@
   border-radius: 10px;
   color: #000;
   margin:330px auto 10px;
-  box-shadow: #000 1px 1px 3px;
+  /* box-shadow: #000 1px 1px 3px; */
 
   transition: background-color linear 0.5s;
 }
 
 .donate .donateOnline a:hover{
   background-color: #F1B602;
-  
 }
-
-/* .donate .donateOnline:hover{
-  transition: background-image 2s;
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.6)),url(../img/Support-Page/donateonline.jpg);
-} */
 
 .donateOnline h5{
   color: white;
   font-size: 2rem;
-
 }
+
+/* Donate Onsite Block */
 
 .donate .donateOnSite{
   background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.3)),url(../img/Support-Page/donate.jpg);
 }
-
 
 .donate .donateOnSite h5{
   font-size: 3rem;
@@ -216,7 +212,26 @@
   border-radius: 10px;
   color: #000;
   margin:290px auto 10px;
-  box-shadow: #000 1px 1px 3px;
-
+  /* box-shadow: #000 1px 1px 3px; */
   transition: background-color linear 0.5s;
 }
+
+.donate .donateOnSite a:hover{
+  background-color: #F1B602;
+}
+
+  /* -----------Ticket Aside----------- */
+  .ticket img{
+    display: block;
+    width: 15vh;
+    position: fixed;
+    right: -20px;
+    bottom: 5vh;
+    box-sizing: border-box;
+    z-index: 999;
+  }
+    
+  .ticket img:hover{ 
+    width: 16vh;
+  }
+  

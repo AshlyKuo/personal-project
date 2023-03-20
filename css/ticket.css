@@ -73,8 +73,9 @@
 }
 
 .bookInfo a{
+  font-size: 1.5rem;
   display: block;
-  width: 50px;
+  width: 80px;
   height: 40px;
   border-radius: 10px;
   text-align: center;
@@ -83,6 +84,12 @@
   color: #fff;
   background-color: #318339;
   margin:0 auto;
+
+  transition: background-color 1s;
+}
+
+.bookInfo a:hover{
+  background-color: #41a74b;
 }
 
 

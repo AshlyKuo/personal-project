@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Zoo-Home</title>
+    <title>ZOO</title>
 </head>
 <body>
     <!-- Header Block -->
@@ -100,21 +100,21 @@
         <section class="main-block zooNews">
             <h3 class="sub-title">ZOO新鮮事</h3>
             <ul>
-                <li>
+                <li class="firstNews">
                     <h5>貓熊</h5>
-                    <p></p>
+                    <p>熊貓家族迎來了新成員！</p>
                     <a href="./news.html">看更多</a>
                 </li>
                 <li>
                     <img src="./img/Home-Page/zoo-news-2.jpg" alt="水豚">
-                    <h5>水豚</h5>
-                    <p></p>
+                    <h5>水豚來啦!</h5>
+                    <p>新朋友水豚君來啦!快來ZOO看看他們吧</p>
                     <a href="./news.html">看更多</a>
                 </li>
                 <li>
                     <img src="./img/Home-Page/zoo-news-3.jpg" alt="志工招募">
                     <h5>志工招募</h5>
-                    <p></p>
+                    <p>我們正在尋找熱心、有愛心的志工加入我們的團隊！</p>
                     <a href="./news.html">看更多</a> 
                 </li>
             </ul>
@@ -177,13 +177,14 @@
     <!-- Book Ticket ad  -->
     <aside>
         <div class="ticket">
-            <a href="./ticket.html"><img src="./img/Group 46.png" alt=""></a>
+            <a href="./ticket.html"><img src="./img/Home-Page/bookticket.png" alt=""></a>
         </div>
     </aside>
 
     <!-- Footer -->
     <footer>
-        <div class="main-block footerWrapper">
+        <div class="footerWrapper">
+            <!-- Footer Left Block -->
             <div class="zooFooterLeft">
                 <ul>
                     <li class="footerLogo"><img src="./img/Home-Page/logo.svg" alt="">ZOO</li>
@@ -196,36 +197,39 @@
                     </li>
                     <li>
                         <ul class="footerSNSIcon">
-                            <li>Facebook</li>
-                            <li>Twitter</li>
-                            <li>Instagram</li>
-                            <li>Youtube</li>
-                        </ul>
+                            <a href=""><img src="./img/Home-Page/facebook.svg" alt=""></a>
+                            <a href=""><img src="./img/Home-Page/youtube.svg" alt=""></a>
+                            <a href=""><img src="./img/Home-Page/twitter.svg" alt=""></a>
+                            <a href=""><img src="./img/Home-Page/instagram.svg" alt=""></a>
+                        </ul>        
                     </li>
                 </ul>
             </div>
-    
+            
+            <!-- Footer Right Block -->
             <div class="zooFooterRight">
                 <ul>
                     <li>
                         <ul class="footerNav">
-                            <li><a href="">最新消息</a></li>
-                            <li><a href="">遊園資訊</a></li>
-                            <li><a href="">購票資訊</a></li>
-                            <li><a href="">動物資訊</a></li>
-                            <li><a href="">支持我們</a></li>
+                            <li><a href="./news.html">最新消息</a></li>
+                            <li><a href="./zooInform.html">遊園資訊</a></li>
+                            <li><a href="./ticket.html">購票資訊</a></li>
+                            <li><a href="./animalInform.html">動物資訊</a></li>
+                            <li><a href="./support.html">支持我們</a></li>
                         </ul>
                     </li>
                     <li>
                         <h5>接收更多ZOO最新消息</h5>
                         <input type="text" placeholder="輸入E-mail">
-                        <a href="">Submit</a>
+                        <input type="submit">
                     </li>
                 </ul>
-    
             </div>
-    
 
+            <!-- Footer Down Block -->
+            <div class="zooFooterDown">
+                <h5>本網站為緯育TibaMe前端工程師班學員專題作品，本平台僅供學習、展示之用。</h5>
+            </div>
         </div>
     </footer>
 </body>

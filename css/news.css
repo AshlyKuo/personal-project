@@ -70,17 +70,18 @@
 
 .zooNews li{
     background-color: #FBFFF6;
-    padding: 20px;
+    padding: 30px;
     padding-left: 50px;
     height: auto;
     border-radius: 20px;
     margin-bottom: 20px;
 
     display: grid;
-    grid-template-columns: 300px auto;
-    grid-template-rows: 50px auto;
+    grid-template-columns: 300px auto ;
+    grid-template-rows: 50px auto 50px;
     grid-template-areas:'img title'
-                        'img content';
+                        'img content'
+                        'img button';
 }
 
 .zooNews li img{
@@ -98,9 +99,34 @@
 }
 
 .zooNews li p{
+    display: block;
     font-size: 1.8rem;
     grid-area: content;
 }
+
+.moreBtn{
+    display: block;
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 5px;
+    text-decoration: none;
+    grid-area: button;
+    margin-left: 700px;
+    margin-top: 5px;
+    color: white;
+    background-color: #318339;
+    text-align: center;
+    transition: background-color 1s;
+}
+
+/* Button hover */
+
+.moreBtn:hover{
+    background-color: #41a74b;
+}
+
+
 
 /* 分頁點選 */
 
@@ -123,3 +149,20 @@
     font-size: 1rem;
     font-weight: bold;
 }
+
+
+/* -----------Ticket Aside----------- */
+.ticket img{
+    display: block;
+    width: 15vh;
+    position: fixed;
+    right: -20px;
+    bottom: 5vh;
+    box-sizing: border-box;
+    z-index: 999;
+  }
+    
+.ticket img:hover{ 
+    width: 16vh;
+  }
+  

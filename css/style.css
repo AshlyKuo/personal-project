@@ -171,7 +171,14 @@ body{
   width: 40px;
   height: 40px;
   text-decoration: none;
-  margin-right: 30px;
+  margin-right: 35px;
+
+  transition: all 1S
+}
+
+.sns a:hover img{
+  width: 45px;
+  height: 45px;
 }
 
 /* ----------About zoo intro block--------- */
@@ -218,7 +225,7 @@ body{
 
 /* ------ZOO news Block------- */
 .zooNews{
-  margin-top: 150px;
+  margin-top: 100px;
   /* background-color: #FDD764; */
   border-radius: 20px;
 }
@@ -250,40 +257,59 @@ body{
 
 .zooNews img{
   width: 100%;
+  height: 260px;
   border-radius: 10px;
 }
 
-.zooNews h5:nth-child(1){
+.zooNews .firstNews h5{
   font-size: 3rem;
   font-weight: 500;
   padding-top: 260px;
+  padding-left: 80px;
+  color: #FDD764;
+}
+
+.zooNews .firstNews p{
+  font-size: 2rem;
+  padding-top: 20px;
   padding-left: 80px;
 }
 
 .zooNews h5{
   font-size: 3rem;
   font-weight: 500;
-  padding-left: 80px;
+  padding-left: 30px;
+  color: #318339;
 }
 
-.zooNews p{}
+.zooNews p{
+  font-size: 1.8rem;
+  padding-top: 10px;
+  padding-left: 30px;
+}
 
 .zooNews a{
   font-size: 1.5rem;
   display: block;
   background-color: #FDD764;
   color: #000;
-  width: 100px;
-  height: 50px;
+  width: 80px;
+  height: 40px;
   border-radius: 5px;
   text-decoration: none;
-  line-height: 50px;
+  line-height: 40px;
   text-align: center;
   
   position: absolute;
   bottom: 25px;
   right: 10px;
+  transition: background-color 1s;
 }
+/* News a hover */
+.zooNews a:hover{
+  background-color: #F1B602;
+}
+
 
 /*-------- Zoo Explore Block------- */
 .zooExplore ul{
@@ -315,8 +341,9 @@ body{
   width: 120px;
   padding: 10px 0;
   font-size: 2rem;
-  background-color: #318339;
-  color: #FBFFF6;
+  /* background-color: #318339; */
+  color: #318339;
+  font-weight: 600;
 }
 
 
