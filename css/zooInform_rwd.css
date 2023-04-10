@@ -22,8 +22,8 @@
     }
 
     .kv h1{
-        font-size: 2.5rem;
-        left: 0;
+        font-size: 3rem;
+        left: 5vw;
         right: 0;
     }
     
@@ -52,23 +52,60 @@
         flex-direction: column;
     }
 
-    /* Precaution Block */
-    .precaution li{
-        text-align: center;
+    /* Transportation Block */
+    .transport ul{
+        display: flex;
+        flex-direction: column;
     }
 
-    .precaution h5{
-        background-color: #FDD764;
+    .transportWay{
+        margin: 0;
+    }
+
+    /* Precaution Block */
+    .precaution{
         width: 50vw;
-        height: 5vh;
-        line-height: 5vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cautionWrapper{
+        background-color: #FDD764;
         border-radius: 10px;
-        margin: 0 auto;
         margin-bottom: 20px;
     }
 
-    .precaution h6{
+    .precaution i{
+        display: block;
+    }
+
+    .precaution .cautionTitle{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        width: 50vw;
+        height: 5vh;
+        line-height: 5vh;
+        margin: 0 auto;
+    }
+
+    .cautionContent{
         display: none;
+        padding: 10px 20px;
+    }
+
+    .cautionWrapperShow{
+        background-color: #FBFFF6;
+        border: 2px solid #FDD764;
+        height: auto;
+    
+    }
+
+    .cautionContentShow{
+        display: block;
     }
     
     /* Ticket Aside */

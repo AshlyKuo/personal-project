@@ -30,6 +30,8 @@
   }
   
   .kv h1{
+    width: 100%;
+    text-align: center;
     font-family: 'Fredoka One', 'Noto Sans TC';
     text-shadow: 3px 3px 4px #000;
     font-size: 6rem;
@@ -37,8 +39,7 @@
     display: block;
   
     position: absolute;
-    bottom: 50%;
-    left: 20vw;
+    bottom: 60%;
     z-index: 2;
   }
 

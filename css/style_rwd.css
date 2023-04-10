@@ -16,7 +16,7 @@
         top: 5px;
     }
 
-    .kv h1{
+    .title{
         font-size: 3.5rem;
         left: 0;
         right: 0;
@@ -43,7 +43,7 @@
     /* About Zoo Block */
     .aboutZooWrapper{
         width: 100vw;
-        margin: 5vh 0;
+        margin: 5vh 0 0;
     }
 
     .aboutZoo p{
@@ -56,7 +56,17 @@
         bottom: 0px;
     }
 
+    /* Monkey Icon Block */
+    .monkey{
+        width: 100vw;
+        height: 100px;
+    }
+
     /* ZOO news Block */
+    .zooNews{
+        margin-top: 70px;
+    }
+
     .zooNews ul{
         flex-direction: column;
         align-items: center;

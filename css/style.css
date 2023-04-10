@@ -59,7 +59,9 @@ body{
   z-index: 4;
 }
 
-.kv h1{
+.title{
+  width: 100%;
+  text-align: center;
   font-family: 'Fredoka One', cursive;
   text-shadow: 3px 3px 4px #000;
   font-size: 8rem;
@@ -69,9 +71,20 @@ body{
   position: absolute;
   left: 0;
   right: 0;
+  bottom: 60%;
   z-index: 2;
 
-  animation: 2s kv-h1 0.5s ease-out forwards;
+  transition: all 2s;
+
+  /* animation: 2s kv-h1 0.5s ease-out forwards; */
+}
+
+.titleHide{
+  bottom: 0;
+  color: rgba(255,214,91,0);
+  text-shadow: none;
+
+  transition: all 2s;
 }
 
 /* ...h1 animation.... */
@@ -205,15 +218,44 @@ body{
   margin: 0 auto ;
 }
 
-.aboutZooWrapper img{
-  width: 80px;
-  position: absolute;
-  bottom:-100px;
-  left: 100px;
+/* Monkey Icon Block */
+.monkey{
+  position: relative;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.monkeyIcon{
+  width: 100px;
+  /* margin-left: 100px; */
+  /* position: absolute; */
+  /* bottom:-100px;
+  left: 100px; */
   z-index: 1;
+  position: absolute;
+  top:0;
+  left: 20%;
+
+  transition: top 2s;
 
   animation: monkey 2s ease-in forwards;
 }
+
+.monkeyIconHide{
+  /* position: absolute;
+  bottom: 0;
+  left: 100px; */
+  width: 100px;
+  /* margin-left: 100px; */
+  position: absolute;
+  top:-130px;
+  left: 20%;
+  z-index: 2;
+
+  transition: top 2s;
+}
+
+
 
 /* hanging monkey img animation  */
 @keyframe monkey{
@@ -224,6 +266,9 @@ body{
     bottom:-100px
   }
 }
+
+/* Monkey Icon Block */
+
 
 
 /* ------ZOO news Block------- */

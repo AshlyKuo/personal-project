@@ -17,10 +17,12 @@
     }
     
     .kv h1{
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         left: 0;
-        right: 0;
-    }
+        width: 100%;
+        text-align: center;
+        bottom: 70%;
+    }    
         
     .info-block{
         width: 100vw;

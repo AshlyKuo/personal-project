@@ -17,14 +17,17 @@
     }
     
     .kv h1{
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         left: 0;
         right: 0;
+        width: 100%;
+        text-align: center;
     }
         
     /* Form Block */
     .formWrapper{
         width: 100vw;
+        padding-top: 20px;
     }
     
     .form{

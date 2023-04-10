@@ -40,6 +40,8 @@
     left: 20vw;  
     z-index:2
 }
+
+
   
 /*Main Block */
 .info-block{
@@ -89,12 +91,18 @@
 
 
 /* Transportation Block */
+.transport ul{
+    display: flex;
+    flex-direction: row;
+}
+
 .transportWay{
-    width: 200px;
+    width: 196px;
     height: 40px;
     background-color: #FDD764;
     border-radius: 10px;
     margin-bottom: 10px;
+    margin-right: 20px;
 }
 
 .transportWay h5{
@@ -104,27 +112,45 @@
     line-height: 40px;
 }
 
-.transportWay div{
+.title{
+    padding: 0 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content{
     display: none;
     width: 196px;
 }
+
+
 .transportWay div p{
+    font-size: 1.5rem;
     display: block;
     padding: 10px;
 }
 
-.transportWay:hover{
-    width: 196px;
+/* click and Show */
+.transportWayShow{
+    width: 192px;
     background-color: #FBFFF6;
     border: 2px solid #FDD764;
     height: auto;
-    transition: height 2s;
 }
 
-.transportWay:hover >div{
+.contentShow{
     display: block;
+
     transition: all 1s;
 }
+
+.iconUp{
+    transform: rotate(180deg);
+}
+
+
 
 
 
@@ -137,7 +163,7 @@
 }
  
 .precaution li{
-   margin-bottom: 5px;
+   margin-bottom: 15px;
 }
 
 .precaution h5{
@@ -147,6 +173,14 @@
 
 .precaution h6{
     font-size: 1.5rem;
+}
+
+.precaution i{
+    display: none;
+}
+
+.precaution .cautionTitle{
+    padding-left: 0;
 }
 
 

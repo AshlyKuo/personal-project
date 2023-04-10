@@ -53,10 +53,10 @@
         <form class="main-block form helpWay">
             <h4>支持ZOO的方式選擇</h4>
             <label>選擇您要支持ZOO的方式</label>
-            <select>
+            <select class="supportWay">
                 <option>請選擇</option>
-                <option>認養動物</option>
-                <option>捐款支持</option>
+                <option value="adopt">認養動物</option>
+                <option value="donate">捐款支持</option>
             </select>
             
             <label>選擇您要認養的動物</label>
@@ -87,16 +87,36 @@
 
         <form class="main-block form payInfo" action="#">
             <h4>付款方式</h4>
-            <label for="#">轉帳</label>
-            <input name="pay" type="radio" class="radio">
-            <label for="#">信用卡</label>
-            <input name="pay" type="radio" class="radio">
-            <label for="#">卡號</label>
-            <input type="text">
-            <label for="#">到期日</label>
-            <input type="text" placeholder="MM/YY">
-            <label for="#">安全碼</label>
-            <input type="text" placeholder="三碼">
+            <div class="payWay">
+                <div class="group">
+                    <label for="#">轉帳</label>
+                    <input name="pay" type="radio" class="radio">
+                </div>
+                <div class="group">
+                    <label for="#">信用卡</label>
+                    <input name="pay" type="radio" class="radio"> 
+                </div>   
+            </div>
+
+            <div>
+                <label>信用卡卡號：</label>
+                <div class="group">
+                    <input type="text" class="card" maxlength="4">
+                    <input type="text" class="card" maxlength="4">
+                    <input type="text" class="card" maxlength="4">
+                    <input type="text" class="card" maxlength="4">
+                </div>
+                <div class="group creditCardInfo">
+                    <div>
+                        <label for="#">到期日</label>
+                        <input type="text" placeholder="MM/YY">    
+                    </div>
+                    <div>
+                        <label for="#">安全碼</label>
+                        <input type="text" maxlength="3" placeholder="三碼">    
+                    </div>
+                </div>    
+            </div>
             <input type="submit" class="submit">
         </form>
     </section>
@@ -153,5 +173,8 @@
                 </div>
             </div>
         </footer>    
+
+        <script src="./js/navbar.js"></script>
+        <script src="./js/pay.js"></script>
 </body>
 </html>

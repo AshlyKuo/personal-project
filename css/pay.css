@@ -35,7 +35,8 @@
     display: block;
     position: absolute;
     bottom: 60%;
-    left: 30vw;  
+    width: 100%;
+    text-align: center;
     z-index:2
   }
 
@@ -66,11 +67,16 @@
     /* background-color: #FDD764; */
     border-radius: 10px
   }
+
+  .form h4{
+    font-size: 1.8rem;
+  }
   
  .form label {
     margin-bottom: 10px;
     font-weight: bold;
     text-align: left;
+    font-size: 1.5rem;
   }
 
   .form h4{
@@ -120,11 +126,44 @@ input{
 /* Payment Information */
 .radio{
   box-shadow: none;
-  text-align: start;
+  width: 20px;
+  margin: 0;
+  margin-right: 10px;
 }
 
+.group{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.payWay{
+  display: flex;
+  flex-direction: row;
+  margin-bottom:  10px;
+
+}
+
+.payWay label{
+  margin-bottom: 0;
+  margin-right: 5px;
+}
+
+.payWay div{
+  margin-right: 10px;
+}
+
+.card{
+  margin-right: 5px;
+}
+
+.creditCardInfo div:first-child{
+  margin-right: 10px
+}
+
+
 .submit{
-  margin-top: 20px;
+  margin: 10px auto;
   width: 100px;
   box-shadow: #000 1px 1px 3px;
   background-color: #318339;
@@ -139,7 +178,7 @@ input{
 
 /* Footer */
 .zooFooterRight input{
-  width: 50px;
+  width: 100px;
   height: 30px;
   border: none;
   background-color: #FBFFF6;

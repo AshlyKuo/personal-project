@@ -17,10 +17,14 @@
     }
     
     .kv h1{
-        font-size: 2.5rem;
+        font-size: 3.5rem;
         left: 0;
         right: 0;
-    }
+        animation: none;
+        width: 100%;
+        text-align: center;
+        bottom: 80%;
+    }    
         
     .info-block{
         width: 100vw;
@@ -49,6 +53,14 @@
     .donate{
         margin-top: 10vh;
         margin-bottom: 50px;
+    }
+
+    .donate .donateOnline h5{
+        font-size: 2.5rem;
+    }
+
+    .donate .donateOnSite h5{
+        font-size: 2.5rem;
     }
 
     .donate ul{
