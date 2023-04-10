@@ -10,6 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="./css/news.css">
+    <link rel="stylesheet" href="./css/default_rwd.css">
+    <link rel="stylesheet" href="./css/news_rwd.css">
+    <script src="https://kit.fontawesome.com/b1f2ff58a3.js" crossorigin="anonymous"></script>
     <title>Zoo News</title>
 </head>
 <body>
@@ -17,6 +20,7 @@
     <header>
         <div>
             <a href="./index.html" class="logo"><img src="./img/Home-Page/logo.svg" alt="logo">ZOO</a>
+            <i class="fa-solid fa-bars" id="navIcon" style="color: #f1b602;"></i>
             <nav>
                 <ul class="nav">
                     <li><a href="./news.html">最新消息</a></li>
@@ -34,13 +38,16 @@
         <!-- Key Vision Block -->
         <section class="kv">
             <h1>來看看ZOO的最新消息吧</h1>
-            <img clas="kv-back" src="./img/News-Page/kv.jpg" alt="">
+            <picture>
+                <source srcset="./img/News-Page/kv-rwd.jpg" media="(max-width: 428px)">
+                <img clas="kv-back" src="./img/News-Page/kv.jpg" alt="">
+            </picture>
             <img class="kv-subtract" src="./img/Home-Page/Subtract.png"  alt="">
         </section>  
     
-        <section class="zooNews main-block">
+        <section class="main-block zooNews">
             <h3 class="sub-title">最新消息</h3>
-            <ul>
+            <ul class="newsContent">
                 <li>
                     <img src="./img/News-Page/zoo-news-1.png" alt="">
                     <h5>保育人員徵才中</h5>
@@ -114,7 +121,7 @@
                             </ul>        
                         </li>
                     </ul>
-                </div>
+                </div> 
                 
                 <!-- Footer Right Block -->
                 <div class="zooFooterRight">

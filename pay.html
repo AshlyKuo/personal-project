@@ -8,13 +8,17 @@
     <link rel="icon" href="./img/Home-Page/logo.svg" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/default_rwd.css">
     <link rel="stylesheet" href="./css/pay.css">
+    <link rel="stylesheet" href="./css/pay_rwd.css">
+    <script src="https://kit.fontawesome.com/b1f2ff58a3.js" crossorigin="anonymous"></script>
     <title>Zoo Support</title></head>
 <body>
      <!-- Header Block -->
      <header>
         <div>
             <a href="./index.html" class="logo"><img src="./img/Home-Page/logo.svg" alt="logo">ZOO</a>
+            <i class="fa-solid fa-bars" id="navIcon" style="color: #f1b602;"></i>
             <nav>
                 <ul class="nav">
                     <li><a href="./news.html">最新消息</a></li>
@@ -32,7 +36,10 @@
         <!-- Key Vision Block -->
         <section class="kv">
             <h1>謝謝你的幫忙</h1>
-            <img clas="kv-back" src="./img/Pay-Page/kv.jpg" alt="">
+            <picture>
+                <source srcset="./img/Pay-Page/kv-rwd.jpg" media="(max-width:428px)">
+                <img clas="kv-back" src="./img/Pay-Page/kv.jpg" alt="">
+            </picture>
             <img class="kv-subtract" src="./img/Home-Page/Subtract.png"  alt="">
         </section>  
 
@@ -81,9 +88,9 @@
         <form class="main-block form payInfo" action="#">
             <h4>付款方式</h4>
             <label for="#">轉帳</label>
-            <input type="radio" class="radio">
+            <input name="pay" type="radio" class="radio">
             <label for="#">信用卡</label>
-            <input type="radio" class="radio">
+            <input name="pay" type="radio" class="radio">
             <label for="#">卡號</label>
             <input type="text">
             <label for="#">到期日</label>

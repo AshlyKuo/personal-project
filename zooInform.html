@@ -8,13 +8,17 @@
     <link rel="icon" href="./img/Home-Page/logo.svg" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/default_rwd.css">
     <link rel="stylesheet" href="./css/zooInform.css">
+    <link rel="stylesheet" href="./css/zooInform_rwd.css">
+    <script src="https://kit.fontawesome.com/b1f2ff58a3.js" crossorigin="anonymous"></script>
     <title>Zoo Information</title></head>
 <body>
      <!-- Header Block -->
     <header>
         <div>
             <a href="./index.html" class="logo"><img src="./img/Home-Page/logo.svg" alt="logo">ZOO</a>
+            <i class="fa-solid fa-bars" id="navIcon" style="color: #f1b602;"></i>
             <nav>
                 <ul class="nav">
                     <li><a href="./news.html">最新消息</a></li>
@@ -32,7 +36,10 @@
         <!-- Key Vision Block -->
         <section class="kv">
             <h1>ZOO的遊園資訊</h1>
-            <img clas="kv-back" src="./img/ZooInformation-Page/kv.jpg" alt="">
+            <picture>
+                <source srcset="./img/ZooInformation-Page/kv-rwd.jpg" media="(max-width: 428px)">
+                <img clas="kv-back" src="./img/ZooInformation-Page/kv.jpg" alt="">
+            </picture>
             <img class="kv-subtract" src="./img/Home-Page/Subtract.png"  alt="">
         </section>  
     
@@ -54,7 +61,7 @@
                     <h6>早上 8:00 開園，晚上 7:00 閉園</h6>
                 </li>
                 <li>
-                    ! 請注意，動物園的開放時間可能因季節、天氣和其他因素而有所變化。此外，某些動物的展示可能有特定的時間表，例如餵食時間或表演時間，請在參觀前查詢詳細的時間表。 
+                    <h6>! 請注意，動物園的開放時間可能因季節、天氣和其他因素而有所變化。此外，某些動物的展示可能有特定的時間表，例如餵食時間或表演時間，請在參觀前查詢詳細的時間表。 </h6>
                 </li>
             </ul>
         </section>
@@ -64,14 +71,14 @@
             <h4>交通方式</h4>
             <ul>
                 <li class="transportWay byCar">
-                    <h5>開車</h5>
+                    <h5><i class="fa-solid fa-car" style="color: #318339;"></i> 開車</h5>
                     <div class="transportCar" >
                         <p>距離ZOO入口100公尺處設有停車場，並提供30個無障礙車位<br>汽車收費: NT.150/次<br>機車收費: NT.50/次</p>
                     </div>
                 </li>
 
                 <li class="transportWay byMRT">
-                    <h5>捷運</h5>
+                    <h5><i class="fa-solid fa-train-subway" style="color: #318339;"></i> 捷運</h5>
                     <div class="transportMRT">
                         <p>
                         搭乘捷運橘線至動物園站<br>轉呈接駁車:5分鐘到園區
@@ -81,19 +88,14 @@
                 </li>
 
                 <li class="transportWay byBus">
-                    <h5>公車</h5>
+                    <h5><i class="fa-solid fa-bus"  style="color: #318339;"></i> 公車</h5>
                     <div class="transportBus">
                       <p>
                         搭乘214號或50號公車至動物園站下車
                       </p>  
                     </div>
-                    
                 </li>
-
-                
             </ul>
-
-
         </section>
 
         <!-- Precaution Block -->
@@ -101,24 +103,24 @@
             <h4>遊園需知</h4>
             <ul>
                 <li>
-                    <h5>不要餵食動物：</h5>
+                    <h5>不要餵食動物</h5>
                     <h6>餵食動物可能會造成健康問題或者引起不必要的攻擊。此外，某些食物可能對動物有害。</h6>
                 </li>
                 <li>
-                    <h5>不要打擾動物：</h5>
+                    <h5>不要打擾動物</h5>
                     <h6>觀察動物是動物園遊園的主要目的之一，但是不要打擾動物，例如敲打動物圍欄或者喊叫。</h6>
                 </li>                
                 <li>
-                    <h5>不要攜帶寵物：</h5>
+                    <h5>不要攜帶寵物</h5>
                     <h6>請勿攜帶寵物進入動物園。攜帶寵物不僅會對其他遊客造成困擾，還可能對動物造成壓力和不安，並且有可能引發意外事件。如果您需要攜帶服務動物進入動物園，請先向動物園管理部門查詢相關規定。</h6>
                 </li>
                 <li>
-                    <h5>遵循動物園的規定：</h5>
+                    <h5>遵循動物園的規定</h5>
                     <h6>動物園有特定的規定和標誌，請遵守這些規定以確保您和其他遊客的安全，並且不要對動物造成不必要的困擾。</h6>
                 </li>
             </ul>
         </section>
-    </main>
+    </main> 
 
     <!-- Book Ticket ad  -->
     <aside>
@@ -128,10 +130,10 @@
     </aside>
     
         <!-- Footer -->
-        <footer>
-            <div class="footerWrapper">
+    <footer>
+        <div class="footerWrapper">
                 <!-- Footer Left Block -->
-                <div class="zooFooterLeft">
+            <div class="zooFooterLeft">
                     <ul>
                         <li class="footerLogo"><img src="./img/Home-Page/logo.svg" alt="">ZOO</li>
                         <li>
@@ -177,6 +179,6 @@
                     <h5>本網站為緯育TibaMe前端工程師班學員專題作品，本平台僅供學習、展示之用。</h5>
                 </div>
             </div>
-        </footer>    
+    </footer>    
     </body>
 </html>

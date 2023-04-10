@@ -1,0 +1,79 @@
+@media screen and (max-width: 428px){
+    h4{
+        padding-left: 10px;
+        margin-bottom: 10px;
+    }
+
+     /* Key Vision Block */
+     .kv{
+        width: 100vw;
+        height: 50vh;
+        margin-top: calc(10vh + 10px);
+    }
+
+    .kv .kv-subtract{
+        display: none;
+    } 
+
+    .kv img{
+        width: 100vw;
+        height: 50vh;
+        top: 5px;
+    }
+
+    .kv h1{
+        font-size: 2.5rem;
+        left: 0;
+        right: 0;
+    }
+    
+    .info-block{
+        width: 100vw;
+    }
+
+    /* Open Time Block */
+    .openTime li:nth-child(3) h6{
+        padding: 10px 10vw;
+    }
+
+    /* Transportaion */
+    .transport ul{
+        align-items: center;
+    }
+
+    .transport ul li{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    /* OpenTime Block */
+    .openTime li{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Precaution Block */
+    .precaution li{
+        text-align: center;
+    }
+
+    .precaution h5{
+        background-color: #FDD764;
+        width: 50vw;
+        height: 5vh;
+        line-height: 5vh;
+        border-radius: 10px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .precaution h6{
+        display: none;
+    }
+    
+    /* Ticket Aside */
+        .ticket img{
+            width: 15vw;
+        }
+    }   
+    

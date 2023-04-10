@@ -65,7 +65,6 @@
   grid-area: h5;
   padding: 2px 19px;
   font-size: 1.8rem;
-
 }
 
 .bookInfo div{
@@ -95,11 +94,10 @@
 
 /* BookTicket Online */
 .bookOnline{
+    /* width: 100vw; */
     background-color: #FDD764;
     border-radius: 10px;
 }
-
-.bookOnline h3{}
 
 .bookOnline ul{
     display: flex;
@@ -113,28 +111,17 @@
     margin-left: 30px;
 }
 
-.singleTicket{
-    background-image: url(../img/Ticket-Page/single.jpg);
-    background-size: cover;
-    border-radius: 15px;
-}
-.singleTicket h5{
-  color: #fff;
-  text-shadow: #000 1px 1px;
-}
-
-.singleTicket .bookInfo{
-  margin-top: 300px;
-}
-
-.yearTicket img{
+.bookOnline img{
   width: 450px;
   height: 300px;
   border-radius: 15px;
-
 }
 
 /* Group Ticket */
+.otherTicket{
+  /* width: 100vw; */
+}
+
 .otherTicket ul{
     display: flex;
     flex-direction: row;
@@ -147,7 +134,7 @@
     margin-left: 30px;
 }
 
-.otherTicket li img{
+.otherTicket img{
     width: 450px;
     height: 300px;
     border-radius: 15px;

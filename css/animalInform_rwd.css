@@ -1,0 +1,60 @@
+@media screen and (max-width:428px) {
+    /* Key Vision Block */
+    .kv{
+        width: 100vw;
+        height: 50vh;
+        margin-top: calc(10vh + 10px);
+    }
+    
+    .kv .kv-subtract{
+        display: none;
+    } 
+    
+    .kv img{
+        width: 100vw;
+        height: 50vh;
+        top: 5px;
+    }
+    
+    .kv h1{
+        font-size: 2.5rem;
+        left: 0;
+        right: 0;
+    }
+        
+    .info-block{
+        width: 100vw;
+    }
+
+    /* Wrapper */
+    .wrapper>li{
+        width: 100vw;
+    }
+
+
+
+    /* List */
+    .listWrapper{
+        width: 100vw;
+        margin: 0;
+        margin-bottom: 40px;
+    }
+
+    .listWrapper ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+    }
+
+    
+
+    /* Ticket Aside */
+    .ticket img{
+        width: 15vw;
+    }
+   
+    
+}

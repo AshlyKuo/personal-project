@@ -66,6 +66,10 @@ body{
   align-items: center; 
 }
 
+#navIcon{
+  display: none;
+}
+
 nav{}
 
 .nav{
@@ -175,12 +179,12 @@ footer{
 
 .zooFooterRight >ul>li{
   padding: 50px;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 .zooFooterRight >ul>li a{
   display: block;
-  width: 50px;
+  width: auto;
   height: 30px;
   line-height: 30px;
 }

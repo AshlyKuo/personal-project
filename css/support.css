@@ -194,7 +194,7 @@
 
 .donate .donateOnSite p{
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.6rem;
   line-height: 1.6;
 }
 
@@ -211,27 +211,31 @@
   text-decoration: none;
   border-radius: 10px;
   color: #000;
-  margin:290px auto 10px;
+  margin: 254px auto 10px;
   /* box-shadow: #000 1px 1px 3px; */
   transition: background-color linear 0.5s;
+}
+
+.donate .donateOnSite a:nth-child(2){
+
 }
 
 .donate .donateOnSite a:hover{
   background-color: #F1B602;
 }
 
-  /* -----------Ticket Aside----------- */
-  .ticket img{
-    display: block;
-    width: 15vh;
-    position: fixed;
-    right: -20px;
-    bottom: 5vh;
-    box-sizing: border-box;
-    z-index: 999;
-  }
-    
-  .ticket img:hover{ 
-    width: 16vh;
-  }
+/* -----------Ticket Aside----------- */
+.ticket img{
+  display: block;
+  width: 8vw;
+  position: fixed;
+  right: -1vw;
+  bottom: 5vh;
+  box-sizing: border-box;
+  z-index: 999;
+  transition: width 0.5s ease-in;
+}
   
+.ticket img:hover{ 
+  width: 8.5vw;
+}

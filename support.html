@@ -8,7 +8,10 @@
     <link rel="icon" href="./img/Home-Page/logo.svg" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/default_rwd.css">
     <link rel="stylesheet" href="./css/support.css">
+    <link rel="stylesheet" href="./css/support_rwd.css">
+    <script src="https://kit.fontawesome.com/b1f2ff58a3.js" crossorigin="anonymous"></script>
     <title>Zoo Support</title>
 </head>
 <body>
@@ -16,6 +19,7 @@
     <header>
         <div>
             <a href="./index.html" class="logo"><img src="./img/Home-Page/logo.svg" alt="logo">ZOO</a>
+            <i class="fa-solid fa-bars" id="navIcon" style="color: #f1b602;"></i>
             <nav>
                 <ul class="nav">
                     <li><a href="./news.html">最新消息</a></li>
@@ -33,7 +37,10 @@
         <!-- Key vision -->      
         <section class="kv">
             <h1>每個支持都會產生影響</h1>
-            <img clas="kv-back" src="./img/Support-Page/kv-back.jpg" alt="">
+            <picture>
+                <source  srcset="./img/Support-Page/kv-back-rwd.jpg" media="(max-width:428px)">
+                <img class="kv-back" src="./img/Support-Page/kv-back.jpg" alt="">
+            </picture>
             <img class="kv-front" src="./img/Support-Page/kv-front.png" alt=""> 
             <img class="kv-subtract" src="./img/Support-Page/Subtract.png"  alt="">
     </section> 
@@ -64,7 +71,7 @@
                 </li>
                 <li class="donateOnSite">
                     <h5>現場捐款</h5>
-                    <p>若您有來訪ZOO的計畫，也同時想要支持我們<br>我們也設有捐款箱在動物園內</p>
+                    <p>若您有來訪ZOO的計畫<br>也同時想要支持我們<br>我們也設有捐款箱在動物園內</p>
                     <a href="./ticket.html">購票</a>
                 </li>
             </ul>

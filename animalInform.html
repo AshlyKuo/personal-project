@@ -9,7 +9,10 @@
     <link rel="icon" href="./img/Home-Page/logo.svg" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/default.css">
-    <link rel="stylesheet" href="./css/animalInform.css">
+    <link rel="stylesheet" href="./css/animalInform.css"> 
+    <link rel="stylesheet" href="./css/default_rwd.css">
+    <link rel="stylesheet" href="./css/animalInform_rwd.css">
+    <script src="https://kit.fontawesome.com/b1f2ff58a3.js" crossorigin="anonymous"></script>
     <title>Zoo Anima Information</title>
 </head>
 <body>
@@ -17,6 +20,7 @@
     <header>
         <div>
             <a href="./index.html" class="logo"><img src="./img/Home-Page/logo.svg" alt="logo">ZOO</a>
+            <i class="fa-solid fa-bars" id="navIcon" style="color: #f1b602;"></i>
             <nav>
                 <ul class="nav">
                     <li><a href="./news.html">最新消息</a></li>
@@ -34,7 +38,10 @@
         <!-- Key Vision Block -->
         <section class="kv">
             <h1>ZOO的動物們</h1>
-            <img clas="kv-back" src="./img/AnimalInformation-Page/kv.jpg" alt="">
+            <picture>
+                <source srcset="./img/AnimalInformation-Page/kv-rwd.jpg" media="(max-width:428px)">
+                <img clas="kv-back" src="./img/AnimalInformation-Page/kv.jpg" alt="">
+            </picture>
             <img class="kv-subtract" src="./img/Home-Page/Subtract.png"  alt="">
         </section>  
         
@@ -43,16 +50,23 @@
             <h3 class="sub-title">動物資訊</h3>
         </section>
 
+
         <section class="main-block">
+            <ul class="btnArea">
+                <li class="btn peguinBtn btnAreaOn">企鵝館</li>
+                <li class="btn tempBtn">溫帶動物區</li>
+                <li class="btn childBtn">兒童動物區</li>
+                <li class="btn africaBtn">非洲動物區</li>
+            </ul>
             <!-- ul 內分四個區域 -->
             <ul class="wrapper">
 
                 <!-- 企鵝區的開始 -->
-                <li class="peguinBtn">
-                    <span>企鵝館</span>
+                <li>
+                    <!-- <span class="peguinBtn">企鵝館</span> -->
 
                     <!-- 企鵝區的內容 -->
-                    <div class="listWrapper penguinArea" id="penguin">
+                    <div class="listWrapper penguinArea listWrapperOn" id="penguin">
                         <ul>
                             <li>
                                 <img src="./img/AnimalInformation-Page/kingpenguin.jpg" alt="國王企鵝">
@@ -76,8 +90,8 @@
                 <!-- 企鵝區結束 -->
 
                 <!-- 溫帶區開始 -->
-                <li  class="tempBtn">
-                    <span>溫帶動物區</span>
+                <li>
+                    <!-- <span  class="tempBtn">溫帶動物區</span> -->
                     <!-- 溫帶區的內容 -->
                     <div class="listWrapper temperateZoneAnimal" id="temperateZoneAnimal">
                         <ul>
@@ -107,8 +121,8 @@
                 <!-- 溫帶區結束 -->
 
                 <!-- 兒童動物區開始 -->
-                <li class="childBtn">
-                    <span>兒童動物區</span>
+                <li>
+                    <!-- <span> class="childBtn"兒童動物區</span> -->
                     <!-- 兒童區內容 -->
                     <div class="listWrapper childZoneAnimal">
                         <ul>
@@ -134,8 +148,8 @@
                 <!-- 溫帶區結束 -->
 
                 <!-- 非洲動物區 -->
-                <li class="africaBtn">
-                    <span>非洲動物區</span>
+                <li>
+                    <!-- <span class="africaBtn">非洲動物區</span> -->
                     <!-- 非洲區內容 -->
                     <div class="listWrapper africaZoneAnimal">
                         <ul>
@@ -174,8 +188,8 @@
         </div>
     </aside> 
 
-        <!-- Footer -->
-        <footer>
+    <!-- Footer -->
+    <footer>
             <div class="footerWrapper">
                 <!-- Footer Left Block -->
                 <div class="zooFooterLeft">
@@ -224,6 +238,8 @@
                     <h5>本網站為緯育TibaMe前端工程師班學員專題作品，本平台僅供學習、展示之用。</h5>
                 </div>
             </div>
-        </footer>    
+    </footer>  
+    
+    <script src="./js/animalInform.js"></script>  
 </body>
 </html>

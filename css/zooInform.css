@@ -154,15 +154,15 @@
 /* -----------Ticket Aside----------- */
 .ticket img{
     display: block;
-    width: 15vh;
+    width: 8vw;
     position: fixed;
-    right: -20px;
+    right: -1vw;
     bottom: 5vh;
     box-sizing: border-box;
     z-index: 999;
-}
+    transition: width 0.5s ease-in;
+  }
     
-.ticket img:hover{ 
-    width: 16vh;
-}
-  
+  .ticket img:hover{ 
+    width: 8.5vw;
+  }

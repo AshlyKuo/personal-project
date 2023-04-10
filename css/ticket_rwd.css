@@ -1,0 +1,100 @@
+@media screen and (max-width:428px) {
+    /* Key Vision Block */
+    .kv{
+        width: 100vw;
+        height: 50vh;
+        margin-top: calc(10vh + 10px);
+    }
+    
+    .kv .kv-subtract{
+        display: none;
+    } 
+    
+    .kv img{
+        width: 100vw;
+        height: 50vh;
+        top: 5px;
+    }
+    
+    .kv h1{
+        font-size: 2.5rem;
+        left: 0;
+        right: 0;
+    }
+        
+    .info-block{
+        width: 100vw;
+    }
+    
+    /* BookInfo  */
+    .bookInfo{
+        width: 350px;
+        grid-template-columns: 70% 30%;
+    }
+
+    .bookInfo h4{
+        padding: 10px 0;
+        padding-left: 10px;
+    }
+
+    .bookInfo a{
+        width: 80px;
+        height: 50px;
+        line-height: 50px;
+        margin-top: auto;
+    }
+    
+    /* Book Online Block */
+    .bookOnline{
+        margin-top: 50px;
+    }
+
+    .bookOnline ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bookOnline img{
+        width: 350px;
+        height: 311px;
+        margin: 0 auto;
+    }
+
+    .bookOnline li{
+        margin-left: 0;
+        margin-bottom: 50px;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* other Ticket Block */
+    .otherTicket{
+        margin-top: 50px;
+    }
+
+    .otherTicket ul{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    .otherTicket img{
+        width: 350px;
+        height: 311px;
+        margin: 0 auto;
+    }
+
+    .otherTicket li{
+        margin-left: 0;
+        margin-bottom: 50px;
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

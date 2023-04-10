@@ -39,24 +39,12 @@
     z-index:2
   }
 
-/* 標題排版 */
-
-.wrapper{
-    position: relative;
+/* 按鈕排版 */
+.btnArea{
+    display: flex;
+    flex-direction: row;
 }
-
-.wrapper>li{
-    background-color: #FDD764;
-    border-radius: 0 10px 10px 10px;
-    /* outline: 3px solid black; */
-    width: 1200px;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-/* 動物區選單排版 */
-span{
+.btn{
     font-size: 2rem;
     font-weight: 600;
     display: block;
@@ -65,69 +53,34 @@ span{
     line-height: 60px;
     text-align: center;
     background-color: #318339;
+    color: white;
     border-radius: 10px 10px 0 0;
-
-    position: absolute;
-    top: -59px;
+    margin-right: 5px;
 }
 
-.peguinBtn span{
+.btnAreaOn{
     background-color: #FDD764;
+    color: #000;
 }
 
-span:hover{
+/* 標題排版 */
+
+.wrapper{
+}
+
+.wrapper>li{
     background-color: #FDD764;
+    border-radius: 0 10px 10px 10px;
+    /* outline: 3px solid black; */
+    width: 1200px;
 }
 
-.peguinBtn span{
-    left: 0;
-}
-
-.tempBtn span{
-    left: 205px;
-}
-
-.tempBtn:hover .temperateZoneAnimal{
-    display: block;
-}
-
-.tempBtn:hover span{
-    background-color: #FDD764;
-}
-
-.tempBtn:hover .peguinBtn span{
-    background-color: #318339;
-}
-
-.childBtn span{
-    left: 410px;
-}
-
-.childBtn:hover .childZoneAnimal{
-    display: block;
-}
-
-.childBtn:hover span{
-    background-color: #FDD764;
-}
-
-.africaBtn span{
-    left: 615px;
-}
-
-.africaBtn:hover .africaZoneAnimal{
-    display: block;
-}
-
-.africaBtn:hover span{
-    background-color: #FDD764;
-}
-/* 除了企鵝區先隱藏 */
+/* js顯示*/
 .listWrapper{
     display: none;
 }
 
-.penguinArea{
+.listWrapperOn{
     display: block;
 }
 
@@ -136,11 +89,11 @@ span:hover{
 .listWrapper ul{
     width: 1100px;
     height: auto;
-    margin: 46px;
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .listWrapper ul li{
@@ -149,7 +102,7 @@ span:hover{
     align-items: center;
 
     background-color: #FBFFF6;
-    border-radius: 10px;
+    border-radius: 5%;
     width: 330px;
     height: 550px;
     margin: 16px;
@@ -174,20 +127,16 @@ span:hover{
 /* -----------Ticket Aside----------- */
 .ticket img{
     display: block;
-    width: 15vh;
+    width: 8vw;
     position: fixed;
-    right: -20px;
+    right: -1vw;
     bottom: 5vh;
     box-sizing: border-box;
     z-index: 999;
-  }
-    
-  .ticket img:hover{ 
-    width: 16vh;
-  }
-  
-
-/* footer */
-footer{
-    margin-top: 1300px;
+    transition: width 0.5s ease-in;
 }
+    
+.ticket img:hover{ 
+    width: 8.5vw;
+}
+  

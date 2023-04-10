@@ -8,13 +8,17 @@
     <link rel="icon" href="./img/Home-Page/logo.svg" type="image/x-icon" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="./css/default_rwd.css">
     <link rel="stylesheet" href="./css/ticket.css">
+    <link rel="stylesheet" href="./css/ticket_rwd.css">
+    <script src="https://kit.fontawesome.com/b1f2ff58a3.js" crossorigin="anonymous"></script>
     <title>Zoo Ticket</title></head>
 <body>
      <!-- Header Block -->
      <header>
         <div>
             <a href="./index.html" class="logo"><img src="./img/Home-Page/logo.svg" alt="logo">ZOO</a>
+            <i class="fa-solid fa-bars" id="navIcon" style="color: #f1b602;"></i>
             <nav>
                 <ul class="nav">
                     <li><a href="./news.html">最新消息</a></li>
@@ -32,9 +36,14 @@
          <!-- Key Vision Block -->
          <section class="kv">
             <h1>購票資訊</h1>
-            <img clas="kv-back" src="./img/Ticket-Page/kv-2.jpg" alt="">
+            <picture>
+                <source class="kv-back" srcset="./img/Ticket-Page/kv-rwd.jpg" media="(max-width: 428px)">
+                <img class="kv-back" src="./img/Ticket-Page/kv.jpg" alt="">
+            </picture>
             <img class="kv-subtract" src="./img/Home-Page/Subtract.png"  alt="">
         </section>  
+
+
         <section class="main-block ticketTitle">
             <h3 class="sub-title">ZOO購票</h3>
             <p></p>
@@ -44,6 +53,7 @@
             <h3 class="sub-title">線上訂票</h3>
             <ul>
                 <li class="singleTicket">
+                    <img src="./img/Ticket-Page/single.jpg" alt="">
                     <div class="bookInfo">
                         <h4>單日票券</h4>
                         <h5>最適合與朋友或家人一起購買的票券</h5>
